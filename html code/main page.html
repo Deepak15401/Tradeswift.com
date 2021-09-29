@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tradeswift </title>
+</head>
+<body>
+
+  <section class="showcase ">
+    <header>
+      <h2 class="logo"> Tradeswift</h2>
+      <div class="toggle  "></div>
+    </header>
+   
+   <video src="slow video.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Explore The World </h2> 
+      <h3>Of Trading.<!-- with Tradeswift--></h3>
+      <p><b>"Don't Be Late Investment is Great."  </b></p>
+      <a href="login.html">Know More</a>
+    </div>
+    <ul class="social">
+      <li><a href="https://www.facebook.com/profile.php?id=100072595880351"><img src="facebook.png"></a></li>
+      <li><a href="https://instagram.com/tradeswift199?utm_medium=copy_link"><img src="instagram.png"></a></li>
+
+      
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="main page.htmls">Home</a></li>
+      <li><a href="about us .html">About Us</a></li>
+      <li><a href="contact us.html">Contact</a></li>
+      <li><a href="#">Upcoming Offers.</a></li>
+    
+    </ul>
+  </div>
+  <script>
+    const menutoggle = document.querySelector('.toggle') 
+    const showcase = document.querySelector('.showcase') 
+     menutoggle.addEventListener('click',()=>{
+       menutoggle.classList.toggle('active')
+       showcase.classList.toggle('active')
+     })
+  </script>
+</body>
+</html>

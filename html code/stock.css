@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,500;1,600;1,900&display=swap');
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins ', 'Times New Roman', Times, serif;
+list-style:decimal;
+text-align: left;
+  }
+.design{
+    border-radius: 30cm;
+    text-align: center;
+  
+    width: 400px;
+ 
+ 
+}
+header .logo
+{
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  justify-items: center;
+  align-items: center;
+}
+.logo {
+    border-image-repeat:none ;
+  
+   text-transform: uppercase;
+   cursor: pointer;}
+
+.showcase{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    z-index:2;
+}
+.showcase header{
+    position: absolute;
+    top: 0;
+    left:0 ;
+    width: 100%;
+    padding: 20px 100px;
+    color:invert;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    }
+.showcase video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    opacity: 0.8;
+}
+.overlay
+    {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #03a9f4;
+      mix-blend-mode: overlay;
+    }
+    .showcase.active
+{
+  right: 300px;
+}
+.accordian1{
+
+    background-color:#125D98;
+    color: #fff;
+}
+.button-design{
+    background-color: #77ACF1;
+    color: azure;
+    text-align: center;
+}
+h6{
+    font-size: large;
+    font-weight: 600;
+}
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+  }
+  body {
+  
+    font-family:"Raleway",sans-serif;
+    height:90vh;
+  }
+  .center {
+   
+    position:flex;
+    top:60%;
+    left:50%;
+    margin: 70px 70px;
+    padding: 90px 10px 0 100px;
+    transform:translate(-50%,-50%);
+  }
+  .center button {
+    padding:10px 20px;
+    font-size:20px;
+    font-weight:800;
+    color:#222;
+    background:#f5f5f5;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    border-radius:5px;
+  }
+  .popup {
+    position:absolute;
+    top:-150%;
+    left:50%;
+    opacity:0;
+    z-index: 10;
+    transform:translate(-50%,-50%) scale(1.25);
+    width:480px;
+    height:auto;
+    padding:20px 30px;
+    background:rgb(4, 3, 92);
+    box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15);
+    border-radius:10px;
+    transition:top 0ms ease-in-out 200ms,
+               opacity 200ms ease-in-out 0ms,
+               transform 200ms ease-in-out 0ms; 
+  }
+  .popup.active {
+    top:50%;
+    opacity:1;
+    transform:translate(-50%,-50%) scale(1);
+    transition:top 0ms ease-in-out 0ms,
+               opacity 200ms ease-in-out 0ms,
+               transform 200ms ease-in-out 0ms;
+  }
+  .popup .close-btn {
+    position:absolute;
+    top:10px;
+    left:10px;
+    width:15px;
+    height:15px; 
+    text-emphasis-color: black;
+    background:rgb(252, 249, 249);
+    color:rgb(5, 5, 5);
+    text-align:center;
+    line-height:15px;
+    border-radius:15px;
+    cursor:grab;
+  }
+  
+.toggle{
+    position:relative;
+    width: 60px;
+    height: 60px;
+    background: url('image.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    z-index: 1000;
+
+}
+.toggle.active{
+    background: url('close.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.menu
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a0cffc;
+}
+.menu ul
+{
+  position: relative;
+}
+.menu ul li
+{
+  list-style: none;
+  height: 10vh;
+
+}
+.menu ul li a
+{
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+.menu ul li a:hover
+{
+  color: #ff0000; 
+}
+
+@media (max-width: 991px)
+{
+  .showcase,
+  .showcase header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
+}
